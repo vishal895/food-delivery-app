@@ -1,0 +1,12 @@
+.footer{
+    background-color: lightgray;
+    padding: 50px;
+}
+.grid_footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.list li {
+    list-style: none !important;
+  }
