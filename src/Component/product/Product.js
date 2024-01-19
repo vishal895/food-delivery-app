@@ -22,9 +22,10 @@ const Product = () => {
     fetchdata()
   },[])
 
-  return data.lenght === 0 ? (
-    <h1>looding.......</h1>
-  ) : (
+  // return data.lenght === 0 ? (
+  //   <h1>looding.......</h1>
+  // ) : (
+    return (
     <div className="p-50">
       <input
         type="text"
@@ -54,8 +55,10 @@ const Product = () => {
         filter rating more than 4
       </button>
       <div className="card_grid ">
-        {filter.length > 0 &&
-          filter.map((restaurants) => {
+        
+         {filter.length > 0 &&  
+         filter.map((restaurants) => { 
+          
             return (
               <>
               <NavLink key={restaurants.info.id} to={`/details/${restaurants.info.id}`}  style={{ textDecoration: 'none' }}>
@@ -63,7 +66,9 @@ const Product = () => {
               </NavLink>
               </>
             );
-          })}
+          })} 
+            
+          
       </div>
     </div>
   );
