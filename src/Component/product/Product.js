@@ -22,10 +22,10 @@ const Product = () => {
     fetchdata()
   },[])
 
-  // return data.lenght === 0 ? (
-  //   <h1>looding.......</h1>
-  // ) : (
-    return (
+  return data.lenght === 0 ? (
+    <h1>looding.......</h1>
+  ) : (
+    
     <div className="p-50">
       <input
         type="text"
@@ -56,7 +56,7 @@ const Product = () => {
       </button>
       <div className="card_grid ">
         
-         { 
+         {filter.length > 0 &&  
          filter.map((restaurants) => { 
           
             return (
