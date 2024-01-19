@@ -56,7 +56,7 @@ const Product = () => {
       </button>
       <div className="card_grid ">
         
-         {filter.length > 0 &&  
+         { 
          filter.map((restaurants) => { 
           
             return (
